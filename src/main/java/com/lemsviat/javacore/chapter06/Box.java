@@ -7,7 +7,20 @@ public class Box {
         double height;
         double depth;
 
-        @Override
+    public Box() {
+        System.out.println("Конструктор по умолчанию с размерами -10*10*10");
+        this.width = 10;
+        this.height = 10;
+        this.depth = 10;
+    }
+
+    public Box(double w, double h, double d) {
+        this.width = w;
+        this.height = h;
+        this.depth = d;
+    }
+
+    @Override
         public boolean equals(Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
@@ -27,5 +40,10 @@ public class Box {
         }
         double returnVolume (){
         return (width*height*depth);
+        }
+        void setDim(double width, double height, double depth){
+            this.width=width;
+            this.height=height;
+            this.depth=depth;
         }
 }
