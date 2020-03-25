@@ -1,8 +1,8 @@
 package main.java.com.lemsviat.javacore.chapter06;
 
 public class Stack {
-    int[] stck = new int[10];
-    int tos;
+    private int[] stck = new int[10];
+    private int tos;
     //инициализация вершины стека
     public Stack() {
         tos = -1;
