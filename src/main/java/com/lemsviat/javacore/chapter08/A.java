@@ -17,4 +17,7 @@ public class A {
     void show1(){
         System.out.println("i and j: " + i+" "+j);
     }
+    void callme(){
+        System.out.println("В методе callme() из класса А");
+    }
 }
