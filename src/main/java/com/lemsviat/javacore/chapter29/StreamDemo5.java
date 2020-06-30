@@ -7,7 +7,7 @@ public class StreamDemo5 {
     public static void main(String[] args) {
         ArrayList<NamePhoneEmail> inputList=new ArrayList<>();
         inputList.add(new NamePhoneEmail("Ivan","23-456-111", "a1@b.com"));
-        inputList.add(new NamePhoneEmail("Petro","23-456-222", "a2@b.com"));
+        inputList.add(new NamePhoneEmail("Petr","23-456-222", "a2@b.com"));
         inputList.add(new NamePhoneEmail("Sidor","23-456-333", "a3@b.com"));
         System.out.println("Исходные элементы: ");
         inputList.stream().forEach(a-> System.out.print(a.name+" "+a.phoneNum+" "+a.email+"; "));
